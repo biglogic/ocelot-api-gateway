@@ -1,0 +1,28 @@
+{
+    "Routes": [
+        {
+        "DownstreamPathTemplate": "/api/v1/AgeGroup",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+            {
+                "Host": "192.168.5.142",
+                "Port": 5001
+            }
+        ],
+        "UpstreamPathTemplate": "/AgeGroup",
+        "UpstreamHttpMethod": [ "Get" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:5000",
+        "RateLimitOptions": {
+          "DisableRateLimitHeaders": false,
+          "QuotaExceededMessage": "Customize Tips!",
+          "Period": "15s",    // seconds, minutes, hours, days
+          "PeriodTimespan": 1,   // only seconds
+          "Limit": 2,
+          "HttpStatusCode": 418, // I'm a teapot
+          "ClientIdHeader": "MyRateLimiting"
+        }
+    }
+  }
