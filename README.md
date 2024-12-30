@@ -14,3 +14,11 @@ Ocelot is a lightweight, fast, and scalable API Gateway built on .NET Core. This
 
 ---
 
+## Configuration 📝
+- ocelot.json
+ 
+   Define routes and downstream services in ocelot.json
+
+# Acknowledgments 🙏
+
+- Ocelot Documentation - Getting Started [https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html](https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html)
